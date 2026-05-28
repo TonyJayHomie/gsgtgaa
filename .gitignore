@@ -1,0 +1,4 @@
+# Local-only working directories — never committed (see CLAUDE.md operating rules).
+# Backups made before editing files, and the no-delete "trash" folder, stay local.
+backups/
+GARBAGE/
