@@ -6,6 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 These are hard constraints set by the repo owner. They take priority over default behavior:
 
+- **Never push to `main`, and never push anywhere without explicit triple approval.** Keep every commit local to the working branch (`claude/…`) only. Do not upload, push, or open a PR to any remote — *not even the feature branch* — unless the owner has explicitly confirmed that specific push **three times**. The `main` branch is off-limits regardless of approval. Committing locally is fine and encouraged; publishing is what requires the triple sign-off.
 - **Never delete anything.** No `rm`, no destructive overwrite — not even of an empty or junk file. To get something out of the way, create a `GARBAGE/` folder at the repo root and move it there.
 - **Two backups before touching any existing file.** Before editing or overwriting a file, copy it to two uniquely-named backups first (e.g. `RSCTransfer.py.20260528-1.bak`, `RSCTransfer.py.20260528-2.bak`), then make the change.
 - **Unique filenames always.** Never reuse a name in a way that clobbers an existing file. New artifacts get their own distinct name (version or timestamp suffix).
